@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Website with Header and Full Width Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #7bfff1; /* Background color of the website */
+            font-family: 'Dolphin', 'Lobster', sans-serif; /* Font family for entire body */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            position: relative; /* Required for absolute positioning of button */
+        }
+        .header {
+            background-color: #57d0ff; /* Header background color */
+            color: #fff; /* Header font color */
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Required for animation */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em; /* Adjust font size as needed */
+            animation: fishAnimation 2s ease-in-out infinite alternate; /* Fish-like animation */
+        }
+        .content {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: center; /* Center align text */
+        }
+        img {
+            width: 100vw;
+            object-fit: cover; /* Ensure image covers entire area */
+        }
+        .button {
+            position: absolute;
+            bottom: 500px; /* Adjust button position as needed */
+            left: calc(50% - 155px); /* Center the first button horizontally */
+            width: 70px; /* Button width */
+            height: 70px; /* Button height */
+            background: url('https://i.postimg.cc/KcMTM6Z3/telegram-128.png') center/contain no-repeat; /* Button background image */
+            border: none;
+            cursor: pointer;
+        }
+        .button2 {
+            position: absolute;
+            bottom: 500px; /* Adjust button position as needed */
+            left: calc(50% - 15px); /* Position the second button next to the first one */
+            width: 70px; /* Button width */
+            height: 70px; /* Button height */
+            background: url('https://i.postimg.cc/Kzc9zZXT/Twitter-X-White-Logo-PNG.png') center/contain no-repeat; /* Button background image */
+            border: none;
+            cursor: pointer;
+        }
+        .button3 {
+            position: absolute;
+            bottom: 500px; /* Adjust button position as needed */
+            left: calc(50% + 125px); /* Position the third button next to the second one */
+            width: 70px; /* Button width */
+            height: 70px; /* Button height */
+            background: url('https://i.postimg.cc/0N7RTGDN/Daco-4192829.png') center/contain no-repeat; /* Button background image */
+            border: none;
+            cursor: pointer;
+        }
+        .text {
+            margin-top: 20px; /* Adjust margin to provide space between buttons and text */
+            font-size: 16px;
+            color: #fff; /* Text color */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .how-to-buy {
+            font-size: 32px;
+            color: #fff; /* Text color */
+            font-weight: bold;
+            margin-bottom: 20px; /* Adjust margin to provide space between text sections */
+        }
+        .info-text {
+            font-size: 20px;
+            color: #fff; /* Text color */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+        }
+        .animated-text {
+            font-size: 32px;
+            color: #fff; /* Text color */
+            font-weight: bold;
+            margin-top: 20px; /* Adjust margin to provide space between text sections */
+            animation: moveText 2s infinite; /* Add animation to the text */
+        }
+        @keyframes fishAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes moveText {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dolphin&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>SolFish</h1>
+    </div>
+    <div class="content">
+        <img src="https://i.postimg.cc/0QLzjg8P/5f55c32914f6631a95eee13fb75a7748-1.gif" alt="Animated GIF">
+        <button class="button"></button>
+        <button class="button2"></button>
+        <button class="button3"></button>
+        <p class="text">Sol Fish Coin: The only currency that's more unpredictable than a fish trying to navigate through land. Hold onto your fins and ride the waves of volatility!</p>
+        <p class="how-to-buy">How to Buy</p>
+        <div class="text">
+            <p class="info-text">
+                <p>1) Download Wallet</p>
+                <p>CREATE A PHANTOM WALLET USING A DESKTOP OR MOBILE DEVICE. THAT WILL ALLOW YOU TO BUY, SELL, SEND AND RECEIVE TOKENS.</p>
+                <br>
+                <p>2) Connect Wallet</p>
+                <p>CONNECT YOUR PHANTOM WALLET TO PUMP.FUN AND SWAP YOUR SOLANA. ENGAGE WITH THE COMMUNITY AND WAIT FOR THE TAKE OFF.</p>
+                <br>
+                <p>3) Bonding Curve</p>
+                <p>ONCE YOU'VE BOUGHT YOUR TOKENS, THE BONDING CURVE SHOULD PROGRESS TO DEPLOY ON DEXSCREENER/RAYDIUM AND YOU ARE READY TO GO.</p>
+            </p>
+            <p class="animated-text">RAYDIUM COMING!!!</p>
+        </div>
+    </div>
+</body>
+</html>
+
